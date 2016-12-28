@@ -2,7 +2,7 @@
   "name": "dijkma/endroid-qrcode-bundle",
   "description": "Endroid Qr Code Bundle for Laravel 5.3",
   "keywords": ["endroid", "qrcode", "qr", "code", "laravel", "bundle"],
-  "homepage": "https://github.com/endroid/EndroidQrCodeBundle",
+  "homepage": "https://github.com/JelleDijkhuizen/endroidqrlaravelbundle",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Dijkma\\QrCodeBundle\\": "src/"
+      "Dijkma\\QrCodeBundle\\": "/"
     }
   },
   "autoload-dev": {
