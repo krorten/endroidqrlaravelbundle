@@ -19,12 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Dijkma\\QrCodeBundle\\": "/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Dijkma\\QrCodeBundle\\": "tests/"
+      "Dijkma\\EndroidQrLaravelBundle\\": "/"
     }
   }
 }
