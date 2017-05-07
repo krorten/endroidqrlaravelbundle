@@ -65,8 +65,8 @@ class EndroidQrServiceProvider extends ServiceProvider {
      */
     private function bladeDirectives()
     {
-        \Blade::extende(function($view){
-            return preg_replace('/\@QR\((.+)\)/','<?php echo(\\QR::create({1})) ?>', $view);
+        \Blade::directive('QR',function($expression){
+            return "<?php echo \\QR::create($expression); ?>";
         });
     }
 
