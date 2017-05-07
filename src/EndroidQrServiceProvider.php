@@ -65,22 +65,12 @@ class EndroidQrServiceProvider extends ServiceProvider {
      */
     private function bladeDirectives()
     {
-        // Call to QR;;create
-        \Blade::directive('QR', function($configdata) {
-            return "<?php echo(\\QR::create({$configdata})) ?>";
+        Blade::extende(function($view){
+            return preg_replace('/\@QR\((.+)\)/','<?php echo(\\QR::create({1})) ?>', $view);
         });
     }
 
     private function publishConfig(){
         $this->publishes([__DIR__.'/../config/config.php' => config_path('qr.php')], 'config');
     }
-
-    private function publishMigrations(){
-        $this->publishes([  __DIR__.'/database/Migrations/' => database_path('migrations')], 'migrations');
-    }
-
-    private function publishPublic(){
-        $this->publishes([__DIR__ . '/public' => public_path('/')], 'public');
-    }
-
 }

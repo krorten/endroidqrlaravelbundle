@@ -2,7 +2,7 @@
 EndroidQr bundle for laravel 5.4
 
 all credit goed to Endroid for creating his bautiful QR package.
-I just made a bundle\wrapper to make it easy to use in laravel 5.3
+I just made a bundle\wrapper to make it easy to use in laravel 5.4
 
 composer require dijkma/endroid-qrcode-bundle
 
